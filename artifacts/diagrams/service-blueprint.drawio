@@ -1,0 +1,50 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Service Blueprint" id="service-blueprint">
+    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1000" pageHeight="500" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="laneTitleFront" value="PM-facing (frontstage)" style="text;html=1;fontStyle=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="20" y="40" width="240" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="f1" value="Open Claude, attach repo" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="40" y="80" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="f2" value="Ask for a skill + template by name" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="240" y="80" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="f3" value="Review generated artifact" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="440" y="80" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="f4" value="Share with eng/leadership" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="640" y="80" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lineFront" value="" style="line;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="20" y="170" width="940" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="laneTitleBack" value="System (backstage)" style="text;html=1;fontStyle=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="20" y="190" width="240" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="b1" value="Repo loaded into context" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="40" y="230" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="b2" value="Skill + command file read, settings/ applied" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="240" y="230" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="b3" value="Output structured against artifacts/ template" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="440" y="230" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="b4" value="Approved artifact saved to projects/" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="640" y="230" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="f1" target="f2" style="html=1;"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="f2" target="f3" style="html=1;"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="f3" target="f4" style="html=1;"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="f1" target="b1" style="html=1;dashed=1;"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="f2" target="b2" style="html=1;dashed=1;"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="b2" target="b3" style="html=1;"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="f3" target="b4" style="html=1;dashed=1;"><mxGeometry relative="1" as="geometry" /></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
